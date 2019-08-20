@@ -3,11 +3,11 @@ window.cipher = {
   decode: decode
 };
 
-function encode() {
+function encode(key, plaintext) {
 
   // save key and text in variables
-  let key = parseInt(document.getElementById("key").value);
-  let plaintext = document.getElementById("text").value;
+  //let key = parseInt(document.getElementById("key").value);
+  //let plaintext = document.getElementById("text").value;
   let result = document.getElementById("result");
 
   // if key is 26 or bigger, use the remainder to go around the alphabet
@@ -58,11 +58,11 @@ function encode() {
   result.value = ciphertext;
 }
 
-function decode() {
+function decode(key, ciphertext) {
 
   // save key and text in variables
-  let key = parseInt(document.getElementById("key").value);
-  let ciphertext = document.getElementById("text").value;
+  //let key = parseInt(document.getElementById("key").value);
+  //let ciphertext = document.getElementById("text").value;
   let result = document.getElementById("result");
 
   // if key is 26 or bigger, use the remainder to go around the alphabet
