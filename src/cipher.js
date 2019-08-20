@@ -5,9 +5,6 @@ window.cipher = {
 
 function encode() {
 
-  // prevent form from reloading the page
-  event.preventDefault();
-
   // save key and text in variables
   let key = parseInt(document.getElementById("key").value);
   let plaintext = document.getElementById("text").value;
@@ -41,7 +38,7 @@ function encode() {
       // if uppercased, check if ciphered code goes above or below the alphabet and keep it in uppercased letters
       if (ciphered > 90) {
         ciphered = ciphered - 26;
-      } else if (ciphered < 97) {
+      } else if (ciphered < 65) {
         ciphered = ciphered + 26;
       }
 
@@ -62,8 +59,6 @@ function encode() {
 }
 
 function decode() {
-  // prevent form from reloading the page
-  event.preventDefault();
 
   // save key and text in variables
   let key = parseInt(document.getElementById("key").value);
@@ -98,7 +93,7 @@ function decode() {
       // if uppercased, check if deciphered code goes above or below the alphabet and keep it in uppercased letters
       if (deciphered > 90) {
         deciphered = deciphered - 26;
-      } else if (deciphered < 97) {
+      } else if (deciphered < 65) {
         deciphered = deciphered + 26;
       }
 
