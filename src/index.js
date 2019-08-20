@@ -1,7 +1,7 @@
-function clickEncode() {
-    window.cipher.encode();
+function encodeText() {
+  window.cipher.encode();
 }
 
-function clickDecode() {
-    window.cipher.decode();
+function decodeText() {
+  window.cipher.decode();
 }

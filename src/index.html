@@ -10,23 +10,14 @@
       <h1>Sending notes on school</h1>
       <h4>Type a text below to cipher it.</h4>
       <form id='cipher' name='cipher'>
-        <textarea id='toCipher' name='toCipher'>Type something to encode....</textarea>
+        <textarea id='text' name='text'>banana</textarea>
         <br>
-        <input type='number' name='cipherKey' id='cipherKey' placeholder='Insert a numeric key to encode'></input>
+        <input type='number' name='key' id='key' placeholder='Insert a numeric key to encode or decode'></input>
         <br>
-        <button onclick='clickEncode()'>Cipher it!</button>
+        <button onclick='encodeText()'>Cipher it!</button>
+        <button onclick='decodeText()'>Decipher it!</button>
         <br>
-        <textarea id='ciphered' name='ciphered'>See your encoded text here.</textarea>
-      </form>
-      <h4>Insert a text below to decipher it.</h4>
-      <form id='decipher' name='decipher'>
-          <textarea id='toDecipher' name='toDecipher'>Type something to decode...</textarea>
-          <br>
-          <input type='number' name='decipherKey' id='decipherKey' placeholder='Insert a numeric key to decode'></input>
-          <br>
-          <button onclick='clickDecode()'>Decipher it!</button>
-          <br>
-          <textarea id='deciphered' name='deciphered'>See your decoded text here.</textarea>
+        <textarea id='result' name='result'>See your encoded or decoded text here.</textarea>
       </form>
       
     </div>
