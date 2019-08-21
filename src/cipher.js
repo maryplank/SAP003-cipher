@@ -5,11 +5,6 @@ window.cipher = {
 
 function encode(key, plaintext) {
 
-  // save key and text in variables
-  //let key = parseInt(document.getElementById("key").value);
-  //let plaintext = document.getElementById("text").value;
-  let result = document.getElementById("result");
-
   // if key is 26 or bigger, use the remainder to go around the alphabet
   if (key >= 26) {
     key = key % 26;
@@ -54,16 +49,11 @@ function encode(key, plaintext) {
   //change from ascii values back to letters and string
   ciphertext = ciphertext.map(char => String.fromCharCode(char)).join("");
       
-  // print ciphered text in textarea 
-  result.value = ciphertext;
+  // return the ciphered text 
+  return ciphertext;
 }
 
 function decode(key, ciphertext) {
-
-  // save key and text in variables
-  //let key = parseInt(document.getElementById("key").value);
-  //let ciphertext = document.getElementById("text").value;
-  let result = document.getElementById("result");
 
   // if key is 26 or bigger, use the remainder to go around the alphabet
   if (key >= 26) {
@@ -108,7 +98,7 @@ function decode(key, ciphertext) {
 
   //change from ascii values back to letters and string
   decipheredText = decipheredText.map(char => String.fromCharCode(char)).join("");
-  
-  // print ciphered text in textarea 
-  result.value = decipheredText;
+
+  // return the deciphered text
+  return decipheredText;
 }
