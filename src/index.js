@@ -1,15 +1,15 @@
+const key = document.getElementById("key");
+const text = document.getElementById("text");
 const result = document.getElementById("result");
-const text = document.getElementById("text").value;
-const key = document.getElementById("key").value;
 
 function encodeText(event) {
   event.preventDefault();
-  return document.getElementById("result").value = window.cipher.encode(parseInt(document.getElementById("key").value), document.getElementById("text").value);
+  result.value = window.cipher.encode(parseInt(key.value), text.value);
 }
 
 function decodeText(event) {
   event.preventDefault();
-  return document.getElementById("result").value = window.cipher.decode(parseInt(document.getElementById("key").value), document.getElementById("text").value);
+  result.value = window.cipher.decode(parseInt(key.value), text.value);
 }
 
 document.getElementById("encodeBtn").addEventListener("click", encodeText);

@@ -4,20 +4,20 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Crafty+Girls|Schoolbell&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crafty+Girls|Schoolbell|Roboto&display=swap" rel="stylesheet">
   <body>
     <div id="root">
       <h1 class="title">Protect your secret notes at school</h1>
-      <h4 class="outterText">Type a text below to encript it.</h4>
+      <h4 class="subtitle">Type a text below to encript or decript it.</h4>
       <form id="cipher" name="cipher" class="form">
-        <textarea class="text" id="text" name="text">Insert a text to encode or decode</textarea>
+        <textarea class="inputStyle" id="text" name="text">Insert a text to encode or decode</textarea>
         <br>
-        <input class="text" type="number" name="key" id="key" placeholder="Insert a numeric key to encode or decode"></input>
+        <input class="inputStyle inputNum" type="number" name="key" id="key" placeholder="Insert a numeric key"></input>
         <br>
-        <button id="encodeBtn">Cipher it!</button>
-        <button id="decodeBtn">Decipher it!</button>
+        <button class="button left" id="encodeBtn">Cipher it!</button>
+        <button class="button right" id="decodeBtn">Decipher it!</button>
         <br>
-        <textarea class="text" id="result" name="result">See your encoded or decoded text here.</textarea>
+        <textarea class="inputStyle" id="result" name="result">See your encoded or decoded text here.</textarea>
       </form>
     </div>
     <script src="cipher.js"></script>

@@ -5,29 +5,29 @@ html {
 .title {
     font-family: 'Crafty Girls', cursive;
     font-size: 28pt;
-    color: #F2AB9B;
+    color: #EF808D;
     text-align: center;
 }
 
-.text {
+.subtitle {
     font-family: 'Schoolbell', cursive;
-    font-size: 14pt;
-    color: #03A688;
-}
-
-.outterText {
-    font-family: 'Schoolbell', cursive;
-    font-size: 14pt;
+    font-size: 18pt;
     color: #94A6A6;
     text-align: center;
 }
 
-textarea {
+.inputStyle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    color: #03A688;
     background-color: #E8F2F2;
     border-radius: 5px;
     border: 1px solid #8FD9C4;
-    width: 49%;
-    height: 130px;
+}
+
+textarea {
+    width: 50%;
+    height: 110px;
     padding: 12px;
     margin-left: 25%;
     margin-right: 25%;
@@ -35,47 +35,66 @@ textarea {
     resize: none;
 }
 
-input {
-    background-color: #E8F2F2;
-    border-radius: 5px;
-    border: 1px solid #8FD9C4;
-    width: 38%;
+.inputNum {
+    width: 300px;
     height: 20px;
     padding: 12px;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 25px;
+    margin-left: 37%;
+    margin-right: 37%;
+    margin-top: 20px;
     -moz-appearance: textfield;
 }
 
-#encodeBtn {
+.button {
     font-family: 'Schoolbell', cursive;
-    font-size: 14pt;
+    font-size: 18pt;
     color: #F2F2F2;
-    width: 10%;
-    height: 35px;
-    background-color: #F2AB9B;
-    border: 1px solid #F29A9B;
-    margin-left: 39%;
-    margin-right: 10px;
+    width: 150px;
+    height: 40px;
+    background-color: #EF808D;
+    border: 1px solid #EF7297;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     display: inline-block;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-#decodeBtn {
-    font-family: 'Schoolbell', cursive;
-    font-size: 14pt;
-    color: #F2F2F2;
-    width: 10%;
-    height: 35px;
-    background-color: #F2AB9B;
-    border: 1px solid #F29A9B;
+.left {
+    margin-left: 37%;
+    margin-right: 10px;
+}
+
+.right {
     margin-left: 10px;
-    margin-right: 39%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: inline-block;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-right: 37%;
+}
+
+@media (max-width: 1265px) {
+
+    .title {
+        font-size: 24pt;
+    }
+
+    .subtitle {
+        font-size: 16pt;
+    }
+
+    .inputNum {
+        width: 50%;
+        height: 40px;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        box-sizing: border-box;
+    }
+
+    .left, .right{
+        width: 24%;
+        margin-left: 38%;
+        margin-right: 38%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+    }
 }
