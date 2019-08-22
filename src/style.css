@@ -96,6 +96,10 @@ textarea {
         margin-bottom: 5px;
         box-sizing: border-box;
     }
+
+    .button {
+        width: 24%;
+    }
 }
 
 @media (max-width: 650px) {

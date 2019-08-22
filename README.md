@@ -18,7 +18,7 @@ On the middle box, type a numeric key to encode or decode. It may be a negative 
 
 4. Choose an operation
 YOu can, then, cipher or decipher the text you entered. 
-*For the curious ones:* cipher will add the key value to the alphabet letters, ignoring non-alphabetical characters. Decipher will decrease the key value from the letters. Inputing a negative key will work the other way around.
+*For the curious ones:* cipher will add the key value to the alphabet letters, ignoring non-alphabetical characters. Decipher will decrease the key value from the letters. 
 
 5. See your secret code!
 See your secret or not-so-secret-anymore message show up at the bottom text-box. Copy it to send an encripted message or just read the decripted message.
