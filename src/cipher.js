@@ -11,7 +11,7 @@ function encode(key, plaintext) {
   }
 
   // put plaintext chars into an array of ascii codes
-  plaintext = plaintext.split("").map(char => char.charCodeAt());
+  asciiCodes = plaintext.split("").map(char => char.charCodeAt());
 
   // Add the key value for each char, keeping non alphabetical chars unchanged
   let ciphertext = plaintext.map(num => {
