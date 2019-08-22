@@ -1,15 +1,15 @@
 {
   "name": "cipher",
   "version": "1.0.0",
-  "main": "src/index.html",
+  "main": "docs/index.html",
   "license": "MIT",
   "scripts": {
-    "eslint": "eslint --ext .js src/ test/ --fix",
+    "eslint": "eslint --ext .js docs/ test/ --fix",
     "pretest": "npm run eslint",
     "test-browser": "opener ./test/index.html",
     "test-node": "nyc mocha ./test/headless.js",
     "test": "npm run test-node --silent && npm run test-browser",
-    "start": "serve ./src"
+    "start": "serve ./docs"
   },
   "dependencies": {
     "chai": "^4.1.2",
