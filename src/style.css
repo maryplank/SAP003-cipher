@@ -90,11 +90,42 @@ textarea {
     }
 
     .left, .right{
-        width: 24%;
         margin-left: 38%;
         margin-right: 38%;
         margin-top: 5px;
         margin-bottom: 5px;
         box-sizing: border-box;
+    }
+}
+
+@media (max-width: 650px) {
+    .title {
+        font-size: 15pt;
+    }
+
+    .subtitle {
+        font-size: 12pt;
+    }
+
+    .inputStyle {
+        font-size: 10pt;
+    }
+
+    textarea, .inputNum {
+        width: 83%;
+        margin-left: 9%;
+        margin-right: 9%;
+        box-sizing: border-box;
+    }
+
+    .button {
+        font-size: 11pt;
+        width: 40%;
+    }
+
+    .left, .right{
+        margin-left: 30%;
+        margin-right: 30%;
+        display: block;
     }
 }
