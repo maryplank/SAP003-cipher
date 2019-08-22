@@ -5,6 +5,11 @@ window.cipher = {
 
 function encode(key, plaintext) {
 
+  // if the key is negative, ignore it
+  if (key < 0) {
+    key = key - (key * 2);
+  }
+
   // put plaintext chars into an array of ascii codes
   let asciiCodes = plaintext.split("").map(char => char.charCodeAt());
 
@@ -13,24 +18,14 @@ function encode(key, plaintext) {
     
     // define the ciphered value
     let ciphered = 0;
-    let uppercased = (num >= 65 && num <= 90);
-    let lowercased = (num >= 97 && num <= 122);
 
     // If is a lowercase char, add the key and keep it lowercase.
-    if (lowercased && key > 0) {
+    if (num >= 97 && num <= 122) {
       ciphered = (((num + key) - 97) % 26 ) + 97;
-
-    // if the key is negative, change de logic    
-    } else if (lowercased && key < 0) {
-      ciphered = (((num + key) - 122) % 26 ) + 122;
       
     // if is an uppercase char, add the key and keep it uppercase
-    } else if (uppercased && key > 0) {
+    } else if (num >= 65 && num <= 90) {
       ciphered = (((num + key) - 65) % 26 ) + 65;
-    
-    // if the key is negative, change de logic
-    } else if (uppercased && key < 0) {
-      ciphered = (((num + key) - 90) % 26 ) + 90;
 
     // if is not alphabetic, keep the char as it is.
     } else {
@@ -49,6 +44,12 @@ function encode(key, plaintext) {
 }
 
 function decode(key, ciphertext) {
+
+  // if the key is negative, ignore it
+  if (key < 0) {
+    key = key - (key * 2);
+  }
+
   // put plaintext chars into an array of ascii codes
   let asciiCodes = ciphertext.split("").map(char => char.charCodeAt());
 
@@ -57,24 +58,14 @@ function decode(key, ciphertext) {
     
     // define the ciphered value
     let deciphered = 0;
-    let uppercased = (num >= 65 && num <= 90);
-    let lowercased = (num >= 97 && num <= 122);
 
     // If is an lowercase char, add the key and keep it lowercase.
-    if (lowercased && key > 0) {
+    if (num >= 97 && num <= 122) {
       deciphered = (((num - key) - 122) % 26 ) + 122;
-
-    // if the key is negative, change the logic
-    } else if (lowercased && key < 0) {
-      deciphered = (((num - key) - 97) % 26 ) + 97;
     
     // if is a uppercase char, add the key and keep it lowercase
-    } else if (uppercased && key > 0) {
+    } else if (num >= 65 && num <= 90) {
       deciphered = (((num - key) - 90) % 26 ) + 90;
-    
-    // if the key is negative, change the logic
-    } else if (uppercased && key < 0) {
-      deciphered = (((num - key) - 65) % 26 ) + 65;
     
     // if is not alphabetic, keep the char as it is.
     } else {
