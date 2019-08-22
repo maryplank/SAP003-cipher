@@ -78,6 +78,10 @@ textarea {
     .subtitle {
         font-size: 16pt;
     }
+    
+    textarea {
+        margin-top: 5px;
+    }
 
     .inputNum {
         width: 50%;
