@@ -7,8 +7,8 @@ If you want a program that will encript and decript your notes automatically for
 
 ## Usage
 
-1. Acess the program.
-http:// .....
+1. Acess the program
+https://maryplank.github.io/SAP003-cipher/
 
 2. Type your text
 On the top text-box, type the text you want to cipher or decipher. You can go nuts and write as many lines as you want, there is no limit.
