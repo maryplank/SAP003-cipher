@@ -2,6 +2,8 @@
 
 1. [Caesar's Cipher](https://github.com/maryplank/SAP003-cipher#caesars-cipher) 
 
+2. [About the aplication](https://github.com/maryplank/SAP003-cipher#about-the-application)
+
 2. [How it works](https://github.com/maryplank/SAP003-cipher#how-it-works)
 
 3. [Usage](https://github.com/maryplank/SAP003-cipher#usage)
@@ -12,6 +14,12 @@ Are you familiar with Caesar's cipher?
 It's a simple encriptacion method where you shift each letter of the text with an according numerical key. 
 
 For example, the word "LOVE", when encrypted using Caesar's cipher with a *key of 4 (this will be our little secret, ok?)* will become "PSZI".
+
+# About the application
+
+This is a web application that can be accessed through a link, just like any website. It was developed fully in JavaScript, meaning that all the logic works client-side. It also uses HTML and CSS to provide a better user experience, including for mobile screens.
+
+The encriptation logic and functions can be found in the cipher.js file.
 
 # How it works
 Let's count the letters of the alphabet **starting at 0.**
@@ -24,7 +32,6 @@ On the example above, we have the following letters:
 |O      |14     |
 |V      |21     |
 |E      |4      |
-
 
 If we add our *super-secret key of 4*, our code will be encrypted like this:
 
