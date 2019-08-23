@@ -1,6 +1,28 @@
 # Caesar's Cipher
 
-Are you familiar with the secret encryptation the emperor 
+Are you familiar with Caesar's cipher?
+It's a simple encriptacion where you shift each letter of the text with an according numerical key. 
+
+For example, the word "LOVE", when encrypted using Caesar's cipher with a *key of 4 (this will be our little secret, ok?)* will become "PSZI".
+
+**This is how it works:**
+Let's count the letters of the alphabet **starting at 0.**
+So: A = 0, B = 1, C = 2... and so on, until Z = 25.
+On the example above, we have the following letters:
+
+|Letter | Value |
+|-------|------:|
+|L      | 11    |
+|O      |14     |
+|V      |21     |
+|E      |4      |
+
+
+If we add our *super-secret key of 4*, our code will be encrypted to:
+11 + 4 = 15  P
+14 + 4 = 18  S
+21 + 4 = 25  Z
+4 + 4 = 8    I
 
 Caesar's cipher is the perfect way to exchange those secret notes at school! You can still decrypt it easily by your own (if you know the secret key) and still protect it from the teacher or other students that has nothing to do with your business.
 Communicate secretly with your friends!
