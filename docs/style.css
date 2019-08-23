@@ -1,5 +1,15 @@
 html {
     background-color: #F2F2F2;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.content {
+    margin: auto;
+    max-width: 1000px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .title {
@@ -36,12 +46,12 @@ textarea {
 }
 
 .inputNum {
-    width: 300px;
+    width: 25.5%;
     height: 20px;
     padding: 12px;
-    margin-left: 37%;
-    margin-right: 37%;
-    margin-top: 20px;
+    margin-left: 36%;
+    margin-right: 36%;
+    margin-top: 10px;
     -moz-appearance: textfield;
 }
 
@@ -49,27 +59,27 @@ textarea {
     font-family: 'Schoolbell', cursive;
     font-size: 18pt;
     color: #F2F2F2;
-    width: 150px;
-    height: 40px;
+    width: 13%;
+    height: 45px;
     background-color: #EF808D;
     border: 1px solid #EF7297;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: inline-block;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .left {
-    margin-left: 37%;
-    margin-right: 10px;
+    margin-left: 36%;
+    margin-right: 1%;
 }
 
 .right {
-    margin-left: 10px;
-    margin-right: 37%;
+    margin-left: 1%;
+    margin-right: 36%;
 }
 
-@media (max-width: 1265px) {
+@media (max-width: 1000px) {
 
     .title {
         font-size: 22pt;
@@ -80,8 +90,9 @@ textarea {
     }
     
     textarea {
-        margin-top: 10px;
-        height: 100px;
+        height: 95px;
+        margin-bottom: 5px;
+        margin-top: 5px;
     }
 
     .inputNum {
@@ -89,16 +100,16 @@ textarea {
         height: 50px;
         margin-left: 20%;
         margin-right: 20%;
-        margin-bottom: 10px;
         margin-top: 10px;
+        margin-bottom: 5px;
         box-sizing: border-box;
     }
 
     .left, .right{
         margin-left: 38%;
         margin-right: 38%;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
         box-sizing: border-box;
     }
 
@@ -121,7 +132,7 @@ textarea {
     }
 
     textarea, .inputNum {
-        width: 83%;
+        width: 82%;
         margin-left: 9%;
         margin-right: 9%;
         margin-top: 5px;
@@ -130,7 +141,7 @@ textarea {
     }
 
     textarea {
-        height: 135px;
+        height: 100px;
     }
 
     .inputNum {
@@ -138,7 +149,7 @@ textarea {
     }
 
     .button {
-        font-size: 13pt;
+        font-size: 18pt;
         width: 40%;
         margin-top: 5px;
         margin-bottom: 5px;

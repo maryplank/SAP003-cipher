@@ -49,20 +49,20 @@ If you want a program that will encrypt and decrypt your notes automatically for
 
 ## Usage
 
-*1. Access the program* <br>
+**1. Access the program** <br>
 https://maryplank.github.io/SAP003-cipher/
 
-*2. Type your text* <br>
+**2. Type your text** <br>
 On the top text-box, type the text you want to cipher or decipher. You can go nuts and write as many lines as you want, there is no limit.
 
-*3. Insert secret key* <br>
+**3. Insert secret key** <br>
 On the middle box, type a numeric key to encode or decode. It may be a negative number to really mess with whoever tries to decode your note. It must be an integer (you can try to type a decimal number, it just won't work).
 
-*4. Choose an operation*<br>
+**4. Choose an operation** <br>
 You can, then, cipher or decipher the text you entered. 
 *For the curious ones:* 'Cipher it!' button will add the key value to the alphabet letters, ignoring non-alphabetical characters. 'Decipher it!' button will subtract the key value from the letters. Inputting a negative key will work the other way around.
 
-*5. See your secret code!*<br>
+**5. See your secret code!** <br>
 See your secret or not-so-secret-anymore message show up at the bottom text-box. Copy it to send an encrypted message or just read the decrypted message.
 
 Hope you guys like it :)
