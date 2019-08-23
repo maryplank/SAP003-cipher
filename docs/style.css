@@ -26,11 +26,11 @@ html {
 }
 
 textarea {
-    width: 50%;
+    width: 60%;
     height: 110px;
     padding: 12px;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
     box-sizing: border-box;
     resize: none;
 }
@@ -72,7 +72,7 @@ textarea {
 @media (max-width: 1265px) {
 
     .title {
-        font-size: 24pt;
+        font-size: 22pt;
     }
 
     .subtitle {
@@ -80,24 +80,25 @@ textarea {
     }
     
     textarea {
-        margin-top: 5px;
+        margin-top: 10px;
+        height: 100px;
     }
 
     .inputNum {
-        width: 50%;
-        height: 40px;
-        margin-left: 25%;
-        margin-right: 25%;
-        margin-bottom: 5px;
-        margin-top: 5px;
+        width: 60%;
+        height: 50px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 10px;
+        margin-top: 10px;
         box-sizing: border-box;
     }
 
     .left, .right{
         margin-left: 38%;
         margin-right: 38%;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         box-sizing: border-box;
     }
 
@@ -106,29 +107,41 @@ textarea {
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 615px) {
     .title {
-        font-size: 15pt;
+        font-size: 18pt;
     }
 
     .subtitle {
-        font-size: 12pt;
+        font-size: 13pt;
     }
 
     .inputStyle {
-        font-size: 10pt;
+        font-size: 13pt;
     }
 
     textarea, .inputNum {
         width: 83%;
         margin-left: 9%;
         margin-right: 9%;
+        margin-top: 5px;
+        margin-bottom: 5px;
         box-sizing: border-box;
     }
 
+    textarea {
+        height: 135px;
+    }
+
+    .inputNum {
+        height: 50px;
+    }
+
     .button {
-        font-size: 11pt;
+        font-size: 13pt;
         width: 40%;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     .left, .right{
