@@ -118,7 +118,7 @@ textarea {
     }
 }
 
-/*@media (max-width: 615px) {
+@media (max-width: 615px) {
     .title {
         font-size: 18pt;
     }
@@ -160,4 +160,4 @@ textarea {
         margin-right: 30%;
         display: block;
     }
-}*/
+}
