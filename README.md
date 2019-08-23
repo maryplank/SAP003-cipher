@@ -1,10 +1,10 @@
 # Index
 
-1. [https://github.com/maryplank/SAP003-cipher#caesars-cipher] Caesar's Cipher
+1. [Caesar's Cipher](https://github.com/maryplank/SAP003-cipher#caesars-cipher) 
 
-2. [https://github.com/maryplank/SAP003-cipher#how-it-works] How it works
+2. [How it works](https://github.com/maryplank/SAP003-cipher#how-it-works)
 
-3. [https://github.com/maryplank/SAP003-cipher#usage] Usage
+3. [Usage](https://github.com/maryplank/SAP003-cipher#usage)
 
 # Caesar's Cipher
 
