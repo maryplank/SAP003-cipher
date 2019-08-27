@@ -2,11 +2,11 @@
 
 1. [Caesar's Cipher](https://github.com/maryplank/SAP003-cipher#caesars-cipher) 
 
-2. [About the aplication](https://github.com/maryplank/SAP003-cipher#about-the-application)
+2.  [How it works](https://github.com/maryplank/SAP003-cipher#how-it-works)
 
-2. [How it works](https://github.com/maryplank/SAP003-cipher#how-it-works)
+3. [About the aplication](https://github.com/maryplank/SAP003-cipher#about-the-application)
 
-3. [Usage](https://github.com/maryplank/SAP003-cipher#usage)
+4. [Usage](https://github.com/maryplank/SAP003-cipher#usage)
 
 # Caesar's Cipher
 
