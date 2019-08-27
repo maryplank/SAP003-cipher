@@ -15,12 +15,6 @@ It's a simple encriptacion method where you shift each letter of the text with a
 
 For example, the word "LOVE", when encrypted using Caesar's cipher with a *key of 4 (this will be our little secret, ok?)* will become "PSZI".
 
-# About the application
-
-This is a web application that can be accessed through a link, just like any website. It was developed fully in JavaScript, meaning that all the logic works client-side. It also uses HTML and CSS to provide a better user experience, including for mobile screens.
-
-The encriptation logic and functions can be found in the cipher.js file.
-
 # How it works
 Let's count the letters of the alphabet **starting at 0.**
 So: A = 0, B = 1, C = 2... and so on, until Z = 25.
@@ -46,6 +40,24 @@ Caesar's cipher is the perfect way to exchange those secret notes at school! You
 Communicate secretly with your friends!
 
 If you want a program that will encrypt and decrypt your notes automatically for you, this is your program! Just type the text you want to encrypt, or the text you received and want to decrypt, and we will do all the work for you.
+
+# About the application
+
+This is a web application that can be accessed through a link, just like any website. It was developed fully in JavaScript, meaning that all the logic works client-side. It also uses HTML and CSS to provide a better user experience, including for mobile screens.
+
+The encriptation logic and functions can be found in the cipher.js file.
+
+It will encrypt uppercase letters, keeping them uppercased and the same goes for lowercase letters. Numbers, punctuation (commas, periods, exclamation points and question marks) and special characters (like letters with accents and other signals) will remain as they are typed. 
+
+Example:
+
+**¡Este es un texto de ejemplo! ¿Cómo será encriptado?**
+
+Using a key of 4, this text will be encrypted as:
+
+**¡Iwxi iw yr xibxs hi iniqtps! ¿Góqs wivá irgvmtxehs?**
+
+As you can see, the letters with accents were not encrypted, so you should have that in mind when typing your message.
 
 ## Usage
 
