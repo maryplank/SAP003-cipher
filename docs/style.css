@@ -57,7 +57,7 @@ textarea {
 
 .button {
     font-family: 'Schoolbell', cursive;
-    font-size: 18pt;
+    font-size: 15pt;
     color: #F2F2F2;
     width: 13%;
     height: 45px;
@@ -149,7 +149,7 @@ textarea {
     }
 
     .button {
-        font-size: 18pt;
+        font-size: 15pt;
         width: 40%;
         margin-top: 5px;
         margin-bottom: 5px;
