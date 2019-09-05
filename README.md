@@ -43,7 +43,7 @@ If you want a program that will encrypt and decrypt your notes automatically for
 
 # About the application
 
-This is a web application that can be accessed through a link, just like any website. It was developed fully in JavaScript, meaning that all the logic works client-side. It also uses HTML and CSS to provide a better user experience, including for mobile screens.
+This is a web application that can be accessed through a link, just like any website. It was developed fully in JavaScript, meaning that all the logic works client-side, and none information inputed is stored anywhere. It also uses HTML and CSS to provide a better user experience, including mobile screens.
 
 The encriptation logic and functions can be found in the cipher.js file.
 
