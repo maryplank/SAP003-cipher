@@ -43,11 +43,11 @@ If you want a program that will encrypt and decrypt your notes automatically for
 
 # About the application
 
-This is a web application that can be accessed through a link, just like any website. It was developed fully in JavaScript, meaning that all the logic works client-side, and none information inputed is stored anywhere. It also uses HTML and CSS to provide a better user experience, including mobile screens.
+This is a web application that can be accessed through a link, just like any website. It was developed fully in JavaScript, meaning that all the logic works client-side, and none of the information inputed is stored anywhere. It also uses HTML and CSS to provide a better user experience, including for mobile screens.
 
 The encriptation logic and functions can be found in the cipher.js file.
 
-It will encrypt uppercase letters, keeping them uppercased and the same goes for lowercase letters. Numbers, punctuation (commas, periods, exclamation points and question marks) and special characters (like letters with accents and other signals) will remain as they are typed. 
+It will encrypt uppercase letters, keeping them uppercased and the same goes for lowercase letters. Numbers, punctuation (commas, periods, exclamation points and question marks) and special characters (like letters with accents and other signals) will remain as they are typed, they will be not encrypted.
 
 Example:
 
@@ -57,7 +57,18 @@ Using a key of 4, this text will be encrypted as:
 
 **¡Iwxi iw yr xibxs hi iniqtps! ¿Góqs wivá irgvmtxehs?**
 
-As you can see, the letters with accents were not encrypted, so you should have that in mind when typing your message.
+As you can see, the letters with accents and puctuation were not encrypted, so you should have that in mind when typing your message.
+
+Also, the program allows for **negative key input**. If you'd like to, let's say, encrypt the same message above with an **-1 key**, it will **subtract** 1 from the letters values. Let's see an example:
+
+**¡Este es un texto de ejemplo! ¿Cómo será encriptado?**
+
+Using a key of -1, this text will be encrypted as:
+
+**¡Drsd dr tm sdwsn cd didlokn! ¿Bóln rdqá dmbqhoszcn?**
+
+And finally, in this application, the alphabet has 25 letters (because we started at 0, remember?) so inserting a key of 26 will go around the alphabet back to the letters you typed. That means that it will not be encrypted.
+
 
 ## Usage
 
@@ -72,7 +83,7 @@ On the middle box, type a numeric key to encode or decode. It may be a negative 
 
 **4. Choose an operation** <br>
 You can, then, cipher or decipher the text you entered. 
-*For the curious ones:* 'Cipher it!' button will add the key value to the alphabet letters, ignoring non-alphabetical characters. 'Decipher it!' button will subtract the key value from the letters. Inputting a negative key will work the other way around.
+*For the curious ones:* 'Cipher it!' button will **add** the key value to the alphabet letters, ignoring non-alphabetical characters. 'Decipher it!' button will **subtract** the key value from the letters. Inputting a negative key will work the other way around.
 
 **5. See your secret code!** <br>
 See your secret or not-so-secret-anymore message show up at the bottom text-box. Copy it to send an encrypted message or just read the decrypted message.
